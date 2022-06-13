@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Dharma Raj Poudel" />
+    <title>Login and User Registration</title>
+</head>
+<body>
+    <!--
+        #GET
+        http://127.0.0.1:5500/form.html?user=dharma&pass=dharma&remember=rememberme&submit=login#
+    -->
+    <form name="login" action="#" method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <legend>User Login</legend>
+            <label>Username</label><br/>
+            <input type="text" name="user" placeholder="Username" required/>
+            <br/>
+            <label>Password</label><br/>
+            <input type="password" name="pass" placeholder="Password" required/><br/>
+            <input type="checkbox" name="remember" value="rememberme"/>Remebmer Me
+            <br/>
+            <input type="submit" name="submit" value="login" />
+        </fieldset>
+    </form>
+
+
+
+
+    <br/>
+        <form method="POST" name="regd" action="#" enctype="multipart/form-data">
+            <fieldset>
+                <legend>User Registration</legend>
+                <table border="0" cellpadding="5" cellspacing="5">
+                <tr>
+                    <td>Username</td>
+                    <td>
+                        <input type="text" name="name" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <input type="email" name="email" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <input type="password" name="password" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>DOB</td>
+                    <td>
+                        <input type="date" name="dob" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td>
+                        <select name="county" size="1">
+                            <option value="IN">India</option>
+                            <option value="BH">Bhutan</option>
+                            <option value="PK">Pakistan</option>
+                            <option value="NP" selected>Nepal</option>
+                            <option value="CN">China</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender" value="M" checked/>Male
+                        <input type="radio" name="gender" value="F" />Female
+                        <input type="radio" name="gender" value="O" />Other
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Courses</td>
+                    <td>
+                        <input type="checkbox" name="php" value="php" checked/>PHP
+                        <input type="checkbox" name="asp" value="asp" />ASP
+                        <input type="checkbox" name="java" value="java" />JAVA
+                    </td>
+                </tr>
+                <tr>
+                    <td>PHOTO</td>
+                    <td>
+                        <input type="file" name="upload" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Message</td>
+                    <td>
+                        <textarea rows="5" cols="50"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" name="register" value="Register"/>
+                        <input type="reset" name="cancel" value="Cancel" />
+                    </td>
+                </tr>
+            </fieldset>
+        </table>
+        </form>
+
+    
+</body>
+</html>
+
