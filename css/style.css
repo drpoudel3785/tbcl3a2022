@@ -1,0 +1,22 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color: #ccddee;
+}
+
+#container{
+    width:1320px;
+    border-radius:0px 40px 0px 80px;
+    min-height: 400px; 
+    background-color: #e6e6e6;
+    margin: auto;   
+}
+.row{min-height:5px;}
+.col100{width:100%;}
+.col50{width:50%; float:left}
+.col33{width:33.33%; float:left;}
+.col25{width:25%; float:left;}
+.col75{width:75%; float:left;}
+.clear{clear:both;}
