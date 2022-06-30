@@ -4,12 +4,16 @@
 }
 body{
     background-color: #ccddee;
+    background-image: url('../images/1.png'),url('../images/2.png'),url('../images/pattern.png');
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    background-position: top left, top right, top right;
+    background-attachment: fixed, fixed, fixed;
 }
 
 #container{
     width:1320px;
     border-radius:0px 40px 0px 80px;
-    min-height: 400px; 
+    min-height: 1400px; 
     background-color: #e6e6e6;
     margin: auto;   
 }
@@ -20,3 +24,22 @@ body{
 .col25{width:25%; float:left;}
 .col75{width:75%; float:left;}
 .clear{clear:both;}
+
+.box1{
+    width:100%;
+    min-height:250px;
+    border:1px solid #ddff00;
+    border-bottom:5px solid #ddff00;
+    border-radius:40px 40px 0px 0px;
+}
+
+
+.imgborder{
+    width:100%;
+    height:auto;
+    border:1px double #ddff00;
+    border-left:4px solid #ddff00;
+    border-bottom:4px solid #ddff00;
+    border-radius:0px 40px 0px 0px;
+
+}
