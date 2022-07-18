@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bascic JavaScrips</title>
+    <script src="js/scripts.js"></script>
+</head>
+<body onload="currentDate(), clockStart()">
+    <div id="currentDate"></div>
+    <div id="currentTime"><span id="hour">hh</span>:<span id="min">mm</span>:<span id="sec">ss</span>
+    </div>
+    </div>
+    <button onclick="closeWindow()">Close</button>
+    <button onclick= "changeBgColor()">Change 
+        color</button>
+    <script>
+        var sports = new Array( "Football", "Tennis", "Cycling"); 
+document.write(sports[0]);
+document.write(sports[1]);
+document.write(sports[2]);
+var count = sports.length;
+// loop through array elements
+for(i=0; i< count; i++)
+{
+document.write("<br>Index " + i + " is " + sports[i]);
+}
+        
+        document.write("<h1> Hello Good Day </H1>");
+        document.write("<H3> Best of Luck. </H3>");
+      //  alert("Hello")
+
+      /* Declaring Variables*/
+       a = 12;
+        var b= 15
+        let c = a+b;
+        console.log("The sum is :" , c)
+        document.write("The sum of "+a+ " and " + b +" is " + c)
+
+
+        /* Taking Users input*/
+        /*
+        name = prompt("Enter Your Name: ")
+        alert("Welcome "+ name)
+
+        */
+
+        /* SUM BY USERS INPUT */
+        /*
+        num1 = prompt("Enter the First Number: ")
+        num2 = prompt("Enter the Second Number: ")
+        sum = num1+num2;
+        document.write("The sum is : " + sum)
+        //Casting string to int
+        sum = parseInt(num1)+parseInt(num2)
+        document.write("The sum is : " + sum)
+
+        */
+    </script>
+    
+</body>
+</html>

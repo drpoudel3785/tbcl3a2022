@@ -3,8 +3,15 @@
     padding:0px;
 }
 body{
-    background-color: #ccddee;
+    background-color: #FF0000;
    
+}
+
+.scrolltext{
+    overflow:auto;
+    width:200px;
+    height:200px;
+    border:2px solid #daf5a4;
 }
 .fixedtop{
     position:fixed;
@@ -49,6 +56,15 @@ body{
     border:1px solid #ddff00;
     border-bottom:5px solid #ddff00;
     border-radius:40px 40px 0px 0px;
+}
+
+.box25{
+    width:24%;
+    min-height:250px;
+    border:1px solid #ddff00;
+    border-bottom:5px solid #ddff00;
+    border-radius:40px 40px 0px 0px;
+    float:left;
 }
 
 
@@ -126,4 +142,41 @@ body{
 #social ul li a:hover{
    border:2px solid #ccddee;
    border-radius: 0px 10px 0px 10px;
+}
+
+@media screen and (min-width:540px) and (max-width:960px) {
+    body{
+        background-color: #3939af;
+    }
+    .container{
+        width:940px;
+    }
+    .colmd50{
+        width:48%;
+        float:left;
+       
+    }
+    
+}
+
+
+@media screen and (min-width:1px) and (max-width:539px) {
+    body{
+        background-color: #7fbb7f;
+    }
+
+    .container{
+        width:500px;
+    }
+
+    
+
+    .colsm100{
+        width:100%;
+       
+    }
+    .box25{
+        width:100%;
+    }
+    
 }
